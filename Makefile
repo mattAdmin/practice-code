@@ -4,8 +4,8 @@ clean:
 	rm -f ex*
 
 cc:
-	rm -f ex15 && make current
+	rm -f ex16 && make current
 
-current: ex15
+current: ex16
 
-all: ex3 ex4 ex5 ex6 ex7 ex8 ex9 ex10 ex11 ex12 ex13 ex14 ex15
+all: ex[3-16]
