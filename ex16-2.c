@@ -16,7 +16,7 @@ struct Person Person_create(char *name, int age, int height, int weight)
 {
   struct Person who;
 
-  who.name = strdup(name);
+  who.name = name; //strdup(name);
   who.age = age;
   who.height = height;
   who.weight = weight;
@@ -24,10 +24,10 @@ struct Person Person_create(char *name, int age, int height, int weight)
   return who;
 }
 
-void Person_destroy(struct Person who)
+/* void Person_destroy(struct Person who)
 {
   free(who.name);;
-}
+  } */
 
 void Person_print(struct Person who)
 {
@@ -63,9 +63,9 @@ int main(int argc, char *argv[])
   frank.weight += 20;
   Person_print(frank);
 
-  // destroy them both so we clean up
+  /* destroy them both so we clean up
   Person_destroy(joe);
-  Person_destroy(frank); 
+  Person_destroy(frank); */
 
   return 0;
 }
