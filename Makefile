@@ -1,11 +1,13 @@
 CFLAGS=-Wall -g
 
 clean:
-	rm -f ex*
+	rm -f ex19
 
 cc:
-	rm -f ex18 && make current
+	rm -f ex19 && make current
 
-current: ex18
+current: ex19
 
-all: ex[3-18]
+ex19: ex19_object.o
+
+all: ex[3-19]
