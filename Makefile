@@ -1,10 +1,10 @@
 CFLAGS=-Wall -g
 
 clean:
-	rm -f ex19
+	rm -f ex19 ex19_object.o
 
 cc:
-	rm -f ex19 && make current
+	rm -f ex19 ex19_object.o && make current
 
 current: ex19
 
