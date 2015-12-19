@@ -22,6 +22,6 @@ int Object_attack(void *self, int damage);
 void *Object_new(size_t size, Object proto, char *description);
 
 #define NEW(T,N) Object_new(sizeof(T), T##Proto, N)
-#define _(n) proto.N
+#define _(N) proto.N
 
 #endif
